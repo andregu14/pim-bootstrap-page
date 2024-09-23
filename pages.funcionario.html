@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Contato - OdontoSmart</title>
+    <title>Funcionário - OdontoSmart</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -47,7 +47,7 @@
   </head>
 
   <body>
-      <!-- ======= Cabeçalho ======= -->
+    <!-- ======= Cabeçalho ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
@@ -302,7 +302,7 @@
       </li><!-- Fim da Navegação da Página de Perfil -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages.funcionario.html">
+        <a class="nav-link" href="pages.funcionario.html">
           <i class="bi bi-people"></i>
           <span>Funcionários</span>
         </a>
@@ -316,7 +316,7 @@
       </li><!-- Fim da Navegação da Página de Perguntas Frequentes -->
 
       <li class="nav-item">
-        <a class="nav-link" href="pages-contact.html">
+        <a class="nav-link collapsed" href="pages-contact.html">
           <i class="bi bi-envelope"></i>
           <span>Contato</span>
         </a>
@@ -355,134 +355,87 @@
     </ul>
 
   </aside><!-- Fim da Barra Lateral-->
+
     <main id="main" class="main">
       <div class="pagetitle">
-        <h1>Contact</h1>
+        <h1>Funcionários</h1>
         <nav>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active">Contato</li>
+            <li class="breadcrumb-item active">Funcionários</li>
           </ol>
         </nav>
       </div>
       <!-- End Page Title -->
 
-      <section class="section contact">
-        <div class="row gy-4">
-          <div class="col-xl-6">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="info-box card">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Endereço</h3>
-                  <p>A108 Adam Street,<br />New York, NY 535022</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="info-box card">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Telefones</h3>
-                  <p>+55 61 3333-3333<br />+55 61 3232-3223</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="info-box card">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email</h3>
-                  <p>info@example.com<br />contact@example.com</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="info-box card">
-                  <i class="bi bi-clock"></i>
-                  <h3>Horário</h3>
-                  <p>Segunda - Sexta<br />9:00 - 17:00</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="col-12">
+        <div class="card recent-sales overflow-auto">
+          <div class="card-body">
+            <h5 class="card-title">Lista de Funcionários</h5>
 
-          <div class="col-xl-6">
-            <div class="card p-4">
-              <form
-                action="forms/contact.php"
-                method="post"
-                class="php-email-form"
-              >
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      placeholder="Nome"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-6">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      placeholder="Email"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-12">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      placeholder="Título"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-12">
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="6"
-                      placeholder="Mensagem"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <div class="col-md-12 text-center">
-                    <div class="loading">Carregando</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Sua mensagem foi enviada. Obrigado!
-                    </div>
-
-                    <button type="submit">Enviar Mensagem</button>
-                  </div>
-                </div>
-              </form>
-            </div>
+            <table class="table table-hover datatable">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Funcionário</th>
+                  <th scope="col">Cargo</th>
+                  <th scope="col">Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><a href="#">#2457</a></th>
+                  <td>João Silva</td>
+                  <td>Dentista</td>
+                  <td>joao.silva@odontosmart.com</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="#">#2147</a></th>
+                  <td>Maria Oliveira</td>
+                  <td>Recepcionista</td>
+                  <td>maria.oliveira@odontosmart.com</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="#">#2049</a></th>
+                  <td>Carlos Santos</td>
+                  <td>Gestor</td>
+                  <td>carlos.santos@odontosmart.com</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="#">#2644</a></th>
+                  <td>Ana Souza</td>
+                  <td>Dentista</td>
+                  <td>ana.souza@odontosmart.com</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="#">#2645</a></th>
+                  <td>Pedro Ferreira</td>
+                  <td>Recepcionista</td>
+                  <td>pedro.ferreira@odontosmart.com</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
+    <!-- ======= Rodapé ======= -->
     <footer id="footer" class="footer">
       <div class="copyright">
         &copy; 2024 <strong><span>OdontoSmart</span></strong
         >. Todos os direitos reservados.
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Todos os links no rodapé devem permanecer intactos. -->
+        <!-- Você pode excluir os links somente se adquiriu a versão pro. -->
+        <!-- Informações de licenciamento: https://bootstrapmade.com/license/ -->
+        <!-- Adquira a versão pro com formulário de contato em PHP/AJAX: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+        Desenvolvido por <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </footer>
-    <!-- End Footer -->
+    <!-- Fim do Rodapé -->
 
     <a
       href="#"
