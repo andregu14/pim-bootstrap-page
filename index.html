@@ -363,7 +363,7 @@
         <div class="col-lg-8">
           <div class="row">
 
-            <!-- Cartão de Vendas -->
+            <!-- Cartão de Consultas -->
             <div class="col-xxl-4 col-md-6">
               <div class="card info-card sales-card">
 
@@ -456,7 +456,7 @@
 
       <div class="d-flex align-items-center">
         <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-          <i class="bi bi-people"></i>
+          <i class="bi bi-people-fill"></i>
         </div>
         <div class="ps-3">
           <h6>1.244</h6>
@@ -488,7 +488,24 @@
     </div>
 
     <div class="card-body">
-      <h5 class="card-title">Relatório <span>| 23/09/2024</span></h5>
+      <h5 class="card-title">Relatório <span id="data-atual"></span></h5>
+
+      <script>
+        // Função para formatar a data como dd/mm/aaaa
+        function formatarData(data) {
+            const dia = String(data.getDate()).padStart(2, '0');
+            const mes = String(data.getMonth() + 1).padStart(2, '0'); // Janeiro é 0!
+            const ano = data.getFullYear();
+            return `${dia}/${mes}/${ano}`;
+        }
+
+        // Obter a data atual
+        const dataAtual = new Date();
+
+        // Atualizar o conteúdo do span com a data formatada
+        document.getElementById('data-atual').textContent = `| ${formatarData(dataAtual)}`;
+
+    </script>
 
       <!-- Gráfico de Linha -->
       <div id="reportsChart"></div>
@@ -971,18 +988,20 @@
           </main><!-- Fim do #main -->
           
           <!-- ======= Rodapé ======= -->
-          <footer id="footer" class="footer">
-            <div class="copyright">
-              &copy; Copyright <strong><span>OdontoSmart</span></strong>. Todos os direitos reservados.
-            </div>
-            <div class="credits">
-              <!-- Todos os links no rodapé devem permanecer intactos. -->
-              <!-- Você pode excluir os links somente se adquiriu a versão pro. -->
-              <!-- Informações de licenciamento: https://bootstrapmade.com/license/ -->
-              <!-- Adquira a versão pro com formulário de contato em PHP/AJAX: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-              Desenvolvido por <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </footer><!-- Fim do Rodapé -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        &copy; 2024 <strong><span>OdontoSmart</span></strong
+        >. Todos os direitos reservados.
+      </div>
+      <div class="credits">
+        <!-- Todos os links no rodapé devem permanecer intactos. -->
+        <!-- Você pode excluir os links somente se adquiriu a versão pro. -->
+        <!-- Informações de licenciamento: https://bootstrapmade.com/license/ -->
+        <!-- Adquira a versão pro com formulário de contato em PHP/AJAX: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+        Desenvolvido por <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </footer>
+    <!-- Fim do Rodapé -->
           
           <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
           
